@@ -385,11 +385,11 @@ a {
 }
 
 .cover-memory {
-  background-image: url("C:\\Users\\Hari Adabala\\Desktop\\My Portfolio\\my-portfolio\\src\\assets\\coverphoto1.png");
+  background-image: url("./assets/coverphoto1.png");
 }
 
 .cover-artcollab {
-  background-image: url("C:\\Users\\Hari Adabala\\Desktop\\My Portfolio\\my-portfolio\\src\\assets\\coverphoto2.png");
+  background-image: url("./assets/coverphoto2.png");
 }
 
 .project-body {
