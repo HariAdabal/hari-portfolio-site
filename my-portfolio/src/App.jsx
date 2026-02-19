@@ -12,7 +12,7 @@ const App = () => {
     { href: "#projects", label: "Project" },
     { href: "#contact", label: "Contact" },
     {
-      href: "https://drive.google.com/file/d/1F2nQosTb9jUTMI7zBV1aQr5iUub2sQaF/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1FiHqHQLkV-b6Fm7HMZodVkGsvjXZ6sEP/view?usp=sharing",
       label: "Resume",
       isResume: true,
     },
@@ -34,7 +34,7 @@ const App = () => {
       {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     sections.forEach((sec) => observer.observe(sec));
@@ -87,7 +87,7 @@ const App = () => {
                 <a key={link.href} href={link.href}>
                   {link.label}
                 </a>
-              )
+              ),
             )}
           </div>
         </nav>
