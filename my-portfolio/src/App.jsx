@@ -12,7 +12,7 @@ const App = () => {
     { href: "#projects", label: "Project" },
     { href: "#contact", label: "Contact" },
     {
-      href: "https://drive.google.com/file/d/1FiHqHQLkV-b6Fm7HMZodVkGsvjXZ6sEP/view?usp=sharing",
+      href: "https://drive.google.com/uc?export=download&id=1FiHqHQLkV-b6Fm7HMZodVkGsvjXZ6sEP",
       label: "Resume",
       isResume: true,
     },
