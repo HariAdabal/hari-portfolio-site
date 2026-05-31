@@ -49,7 +49,17 @@ const App = () => {
             Hari<span>.</span>
           </a>
 
-          <div className="nav-links">
+          <button
+            className="nav-hamburger"
+            onClick={() => setOpen((prev) => !prev)}
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div className={`nav-links${open ? " nav-links--open" : ""}`}>
             {links.map((link) =>
               link.isResume ? (
                 <a
@@ -84,7 +94,11 @@ const App = () => {
                   </svg>
                 </a>
               ) : (
-                <a key={link.href} href={link.href}>
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                >
                   {link.label}
                 </a>
               ),
@@ -160,8 +174,8 @@ const App = () => {
                 <span className="skill-pill">Express.js</span>
                 <span className="skill-pill">MongoDB</span>
                 <span className="skill-pill">Tailwind CSS</span>
-                <span className="skill-pill">HTML & CSS</span>
-                <span className="skill-pill">Git & GitHub</span>
+                <span className="skill-pill">HTML &amp; CSS</span>
+                <span className="skill-pill">Git &amp; GitHub</span>
               </div>
             </div>
           </div>
@@ -243,6 +257,46 @@ const App = () => {
                   </a>
                   <a
                     href="https://github.com/HariAdabal/ArtCollab"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn secondary"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-card">
+              <div className="project-cover-img cover-futureme">
+                <span>FutureMe – AI Self Reflection App</span>
+              </div>
+              <div className="project-body">
+                <div className="project-tags">
+                  <span>JavaScript</span>
+                  <span>Gemini API</span>
+                  <span>Netlify</span>
+                  <span>Serverless</span>
+                </div>
+                <h3 className="project-title">
+                  FutureMe – AI Powered Self Reflection
+                </h3>
+                <p className="project-description">
+                  AI-powered app that generates personalized messages from your
+                  future self based on your goals and struggles. Powered by
+                  Google Gemini API with Netlify Serverless Functions.
+                </p>
+                <div className="project-buttons">
+                  <a
+                    href="https://futureme-hari.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn primary"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/HariAdabal/futureme"
                     target="_blank"
                     rel="noreferrer"
                     className="btn secondary"
